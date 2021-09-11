@@ -1,0 +1,582 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//Css
+
+@import '../css/app.css';
+
+.bg-dark {
+    background-color: #000 !important;
+    height: 100px;
+}
+
+.navbar-expand-lg .navbar-collapse{
+    flex-direction: row-reverse;
+}
+
+.logo-turbo{
+    max-width: 100%;
+    width: 17rem;
+}
+
+.btn-entrar{
+    border-radius: 6px;
+    border: 2px #fff solid;
+    color: #FFF;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.banner{
+    background-color: #fff;
+    height:auto;
+}
+
+
+.banner img:not(.btn-header){
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.itens-turbo{
+    height: 80px;
+    background-color: #3E6E6E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.card-vantagens:hover{
+    background: #000000;
+    transform: scale(1.3);
+    transition: all 1s;
+}
+
+.hidden{
+    display: none;
+}
+@media  (max-width: 700px) { 
+
+    .row{
+        overflow-x: hidden !important;
+    }
+
+    #contatos_{
+        display: none!important;
+    }
+
+    #footer{
+        margin-top: 60px;
+    }
+
+    .btn-entrar{
+        width: 100%;
+        margin-left: 0;
+        background: #FFF;
+        color: #000;
+        font-size: 20px;
+    }
+
+    .hidden{
+        display: block !important;
+        text-align: center;
+        font-size: 33px;
+        color: #FFF;
+    }
+  .card-experiencia img{
+    width: 80px !important;
+}
+
+.ocultar{
+    display: none !important;
+}
+
+#footer{
+    height: auto !important;
+}
+
+.card-experiencia span{
+    font-size: 10px !important;
+    font-weight: bold;
+    text-align: center !important;
+    padding-top: 10px;
+}
+
+    #experiencia {
+        height: 30vh !important;
+    }
+    #vantagens{
+        height: 85vh !important;
+        padding-bottom: 5rem !important;
+        padding-top: 5rem !important;
+    }
+    .card-vantagens{
+        width: 18rem !important;
+        height: 7rem !important;
+        transform: scale(1);
+        transition: all 1s !important;
+    }
+
+    .card-vantagens img{
+        width: 3rem !important;
+    }
+    .card-vantagens span{
+        font-size: 0.85rem !important;
+    }
+
+    .p-relative{
+        width: 100vh !important
+    }
+
+    .logo-turbo{
+        max-width: 100%;
+        width: 4rem;
+    }
+    #navbarNav{
+    z-index: 999;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 80px;
+    }
+    .header-text{
+        font-size: 10px !important;
+    }
+
+    .p-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-header{
+        width: 25px !important;
+    }
+
+    .banner img:not(.btn-header){
+        width: 100%;
+        height: 198px;
+        object-fit: cover;
+        object-position: 90% 0%;
+    }
+
+    .itens-turbo{
+        height: 74px;
+    }
+
+    .nav-item{
+        padding: 14px;
+    }
+
+    .texto-principal{
+        font-size: 18px;
+    }
+
+    .fios{
+        display: none;
+    }
+ }
+
+ .row {
+    margin: 0;
+}
+
+.btn-header{
+    box-shadow: none !important;
+    width: 50px;
+
+}
+
+// @font-face {
+//     font-family: 'poppins';
+//     // src: url('/fonts/popinsBold.ttf');
+//   }
+
+  body{
+      font-family: 'poppins' !important;
+  }
+
+  .header-text{
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .texto-principal{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  .f-row{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .c-500{
+   height: 520px;
+   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+
+  .c-500:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+  .fios{
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // transform: translate(-8%,-15%);
+    // width: 87rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-4%, -13%) !important;
+    width: 116%
+  }
+
+  .p-relative{
+      position: relative !important;
+      width: 60vw; 
+  }
+
+  .c-500 .card-title{
+    font-size: 3.55rem;
+    text-align: center;
+    color: #5AA59E;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 55px;
+  }
+
+  .span-title{
+      font-size: 1.5rem;
+  }
+
+  .btn-turbo:hover{
+      transform: scale(1.2);
+      transition: all 0.5s;
+      background: #000;
+      color: #FFF;
+      border-color: #FFF;
+  }
+
+  .btn-turbo{
+    background: transparent;
+    color: #5AA59E;
+    border-color: #5AA59E;
+    padding: 16px;
+    font-size: 1.25rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px #5AA59E solid;
+    border-radius: 9px;
+    font-weight: bold;
+    margin-top: 25px;
+    transition: all 0.2s;
+  }
+  .valor-pacote{
+      font-weight: bold;
+      font-size: 2.55rem;
+  }
+
+  .valor-pacote small{
+      font-weight: bold;
+      font-size: 1rem;
+  }
+
+  .position-button{
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    left: 0;
+  }
+
+  #vantagens{
+    background: #3E6E6E;
+    height: 35vh;
+    margin-top: 5rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+
+  .container-100{
+    height: 100%;
+  }
+  .imagem-vantagens{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .imagem-vantagens img{
+    width: 17rem;
+  }
+
+  .card-vantagens{
+    width: 18rem;
+    height: 9rem;
+    border-radius: 10px;
+    border: 2px #fff solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all 1s;
+  }
+
+  .card-vantagens img{
+    width: 5rem;
+  }
+
+  .card-vantagens span{
+    font-size: 1.35rem;
+    font-weight: bold;
+    color: #FFF;
+    text-align: end;
+  }
+  .flex-alinhamento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #experiencia{
+      height: 45vh;
+  }
+
+  .card-experiencia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .card-experiencia img{
+      width: 150px;
+  }
+
+  .card-experiencia span{
+      font-size: 1.35rem;
+      font-weight: bold;
+      padding-top: 10px;
+  }
+
+  #contatos{
+      height: 100vh;
+      background: #000;
+      margin-top: 5rem;
+  }
+
+  #contatos_{
+    background: #3E6E6E;
+    height: 35vh;
+    margin-top: 5rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+      
+  }
+
+  .row-contatos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .lista-links{
+    list-style-type: none;
+    font-size: 1rem;
+    color: #FFF;
+    cursor: pointer;
+  }
+
+  .lista-links li{
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .mapa_vis{
+      width: 100%;
+  }
+
+  .img-contatos{
+    width: 20rem;
+  }
+  .flex-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    flex-flow: row;
+  }
+
+  .flex-link .row{
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /*Footer*/
+
+  section .section-title {
+    text-align: center;
+    color: #191b1b;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #000 !important;
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+
+#footer {
+    padding: 60px 0;
+    height: 100vh;
+}
+
+.icon-list-ul{
+    list-style-type: none;
+}
+
+.icon-list-ul img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.a-mais-span{
+    font-size: 0.75rem;
+}
+
+.a-mais-span small{
+    color: green;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.card-body{
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  .menuScroll{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+
+  textarea:focus, input:focus, select:focus, button:focus {
+    box-shadow: 0 0 0 0 !important;
+    border: 0 none !important;
+    outline: 0 !important;
+} 
+
+.btn-entrar:hover{
+    background-color: #FFF;
+    color: #000;
+}
+
+.card-contato{
+    height: 150px;
+    border-radius: 7px;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-contato h3{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.link_nav, .link_nav:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+.card-contato:hover{
+   
+    color: #000;
+    transform: scale(1.1);
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.delay-2 {
+    animation-delay: 1s;
+    }
